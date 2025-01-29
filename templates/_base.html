@@ -12,8 +12,20 @@
 </head>
 <body>
 
+{% if user.is_authenticated %}
+    <span>Hello {{ user.email }} |
+        <form action="{% url 'account_logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">logout</button>
+        </form>
+    </span>
+{% else %}
+    <a href="{% url 'account_login' %}">login</a> | <a href="{% url 'account_signup' %}">sign up</a>
+{% endif %}
+
+
 {% block content %}
-    
+
 {% endblock %}
 <!-- Optional JavaScript; choose one of the two! -->
 
