@@ -4,6 +4,9 @@
 {% load i18n %}
 {% load crispy_forms_tags %}
 {% load comment_tags %}
+{% load persian_translation_tags %}
+{% load humanize %}
+
 
 {% block content %}
     {% translate 'Cart' as header_name %}
@@ -38,7 +41,9 @@
                                                     </a>
                                                 </td>
                                                 <td class="product-thumbnail text-left">
-                                                    <img src="assets/img/products/prod-10-70x88.jpg">
+                                                    {% if item.product_obj.image %}
+                                                        <img style="max-height: 400px;" src="{{ item.product_obj.image.url }}">
+                                                    {% endif %}
                                                 </td>
                                                 <td class="product-name">
                                                     <h3>
@@ -49,7 +54,7 @@
                                                 </td>
                                                 <td class="product-price">
                                                             <span class="product-price-wrapper">
-                                                                <span class="money">{{ item.product_obj.price }}</span>
+                                                                <span class="money">{{ item.product_obj.price|intcomma:False|translate_number }} {% translate '$' %}</span>
                                                             </span>
                                                 </td>
                                                 <td class="product-quantity">
@@ -70,7 +75,7 @@
                                                 </td>
                                                 <td class="product-total-price">
                                                             <span class="product-price-wrapper">
-                                                                <span class="money">{{ item.total_price }}</span>
+                                                                <span class="money">{{ item.total_price|intcomma:False|translate_number }} {% translate '$' %}</span>
                                                             </span>
                                                 </td>
                                             </tr>
@@ -109,7 +114,7 @@
                                         </div>
                                         <div class="cart-calculator__item--value">
                                                 <span class="product-price-wrapper">
-                                                    <span class="money">{{ cart.get_total_price }} تومان</span>
+                                                    <span class="money">{{ cart.get_total_price|intcomma:False|translate_number }} {% translate '$' %}</span>
                                                 </span>
                                         </div>
                                     </div>

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 12:12+0330\n"
-"PO-Revision-Date: 2025-02-12 11:37+0330\n"
+"POT-Creation-Date: 2025-02-15 12:21+0330\n"
+"PO-Revision-Date: 2025-02-15 12:22+0330\n"
 "Last-Translator:   <admin@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -30,77 +30,84 @@ msgstr "توضیحات محصول"
 msgid "price"
 msgstr "قیمت محصول"
 
-#: .\products\models.py:11 .\products\models.py:50
+#: .\products\models.py:11 .\products\models.py:52
 msgid "active"
 msgstr "وضعیت فعالیت محصول"
 
-#: .\products\models.py:30
+#: .\products\models.py:12
+msgid "Product Image"
+msgstr "تصویر محصول"
+
+#: .\products\models.py:15
+msgid "Date Time of Creation"
+msgstr "تاریخ ایجاد"
+
+#: .\products\models.py:32
 msgid "Very Bad"
 msgstr "خیلی بد"
 
-#: .\products\models.py:31
+#: .\products\models.py:33
 msgid "Bad"
 msgstr "بد"
 
-#: .\products\models.py:32
+#: .\products\models.py:34
 msgid "Normal"
 msgstr "معمولی"
 
-#: .\products\models.py:33
+#: .\products\models.py:35
 msgid "Good"
 msgstr "خوب"
 
-#: .\products\models.py:34
+#: .\products\models.py:36
 msgid "Perfect"
 msgstr "عالی"
 
-#: .\products\models.py:44
+#: .\products\models.py:46
 msgid "Comment Text"
 msgstr "متن دیدگاه"
 
-#: .\products\models.py:45
+#: .\products\models.py:47
 msgid "What is your score?"
 msgstr "امتیاز شما به این محصول کدام است؟"
 
-#: .\products\templates\products\product_detail.html:17
-msgid "Product details of"
-msgstr "توضیحات محصول"
-
-#: .\products\templates\products\product_detail.html:40
+#: .\products\templates\products\product_detail.html:30
 msgid "$"
 msgstr "تومان"
 
-#: .\products\templates\products\product_detail.html:52
+#: .\products\templates\products\product_detail.html:42
 msgid "Add to Cart"
 msgstr "اضافه به سبد خرید"
 
-#: .\products\templates\products\product_detail.html:68
+#: .\products\templates\products\product_detail.html:58
 msgid "Categories"
 msgstr "دسته بندی ها"
 
-#: .\products\templates\products\product_detail.html:83
+#: .\products\templates\products\product_detail.html:73
 msgid "Product Description"
 msgstr "توضیحات محصول"
 
-#: .\products\templates\products\product_detail.html:162
+#: .\products\templates\products\product_detail.html:152
 msgid "Write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\products\templates\products\product_detail.html:168
+#: .\products\templates\products\product_detail.html:158
 msgid "Submit"
 msgstr "ارسال"
 
-#: .\products\templates\products\product_detail.html:172
+#: .\products\templates\products\product_detail.html:162
 msgid "To write your comment please"
 msgstr "نظر خود را بنویسید"
 
-#: .\products\templates\products\product_detail.html:174
+#: .\products\templates\products\product_detail.html:164
 msgid "Login"
 msgstr "ورود"
 
 #: .\products\views.py:38
 msgid "Comment successfully created"
 msgstr "نظر شما با موفقیت ثبت شد"
+
+#~ msgid "Product details of"
+#~ msgstr "توضیحات محصول"
 
 #~ msgid "Hello"
 #~ msgstr "سلام"

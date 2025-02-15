@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-12 14:48+0330\n"
+"POT-Creation-Date: 2025-02-15 12:21+0330\n"
 "PO-Revision-Date: 2025-02-12 14:55+0330\n"
 "Last-Translator:   <admin@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,8 +76,8 @@ msgstr ""
 #: .\templates\account\email_confirm.html:37
 #, python-format
 msgid ""
-"This email confirmation link expired or is invalid. Please <a "
-"href=\"%(email_url)s\">issue a new email confirmation request</a>."
+"This email confirmation link expired or is invalid. Please <a href=\"%"
+"(email_url)s\">issue a new email confirmation request</a>."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
@@ -143,8 +143,8 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:318
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
-" hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:330
@@ -195,29 +195,29 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\core\validators.py:462
 #, python-format
 msgid ""
-"Ensure this value is a multiple of step size %(limit_value)s, starting from "
-"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+"Ensure this value is a multiple of step size %(limit_value)s, starting from %"
+"(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:494
 #, python-format
 msgid ""
-"Ensure this value has at least %(limit_value)d character (it has "
-"%(show_value)d)."
+"Ensure this value has at least %(limit_value)d character (it has %"
+"(show_value)d)."
 msgid_plural ""
-"Ensure this value has at least %(limit_value)d characters (it has "
-"%(show_value)d)."
+"Ensure this value has at least %(limit_value)d characters (it has %"
+"(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:512
 #, python-format
 msgid ""
-"Ensure this value has at most %(limit_value)d character (it has "
-"%(show_value)d)."
+"Ensure this value has at most %(limit_value)d character (it has %(show_value)"
+"d)."
 msgid_plural ""
-"Ensure this value has at most %(limit_value)d characters (it has "
-"%(show_value)d)."
+"Ensure this value has at most %(limit_value)d characters (it has %"
+"(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
 
@@ -253,8 +253,8 @@ msgstr[1] ""
 #: .\venv\Lib\site-packages\django\core\validators.py:618
 #, python-format
 msgid ""
-"File extension “%(extension)s” is not allowed. Allowed extensions are: "
-"%(allowed_extensions)s."
+"File extension “%(extension)s” is not allowed. Allowed extensions are: %"
+"(allowed_extensions)s."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\core\validators.py:680
@@ -356,15 +356,15 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1556
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1564
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1569
@@ -383,8 +383,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1859
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
-"[[HH:]MM:]ss[.uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1863
@@ -543,8 +543,7 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the
-#. label
+#. characters will prevent the default label_suffix to be appended to the label
 #: .\venv\Lib\site-packages\django\forms\boundfield.py:185
 msgid ":?.!"
 msgstr ""
@@ -593,8 +592,7 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\fields.py:637
 #, python-format
-msgid ""
-"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -648,8 +646,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\forms\formsets.py:61
 #, python-format
 msgid ""
-"ManagementForm data is missing or has been tampered with. Missing fields: "
-"%(field_names)s. You may need to file a bug report if the issue persists."
+"ManagementForm data is missing or has been tampered with. Missing fields: %"
+"(field_names)s. You may need to file a bug report if the issue persists."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\formsets.py:65
@@ -701,8 +699,7 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1450
-msgid ""
-"Select a valid choice. That choice is not one of the available choices."
+msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\models.py:1594
@@ -726,6 +723,8 @@ msgid "Currently"
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\forms\widgets.py:463
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_stacked.html:12
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_tabular.html:34
 msgid "Change"
 msgstr ""
 
@@ -1166,11 +1165,11 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:45
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
-" including the “Referrer-Policy: no-referrer” header, please remove them. "
-"The CSRF protection requires the “Referer” header to do strict referer "
-"checking. If you’re concerned about privacy, use alternatives like <a "
-"rel=\"noreferrer\" …> for links to third-party sites."
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a rel=\"noreferrer"
+"\" …> for links to third-party sites."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\csrf.py:54
@@ -1221,8 +1220,8 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\generic\dates.py:692
@@ -1280,10 +1279,10 @@ msgstr ""
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
 #, python-format
 msgid ""
-"You are seeing this page because <a "
-"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
-"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
-"and you have not configured any URLs."
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" rel=\"noopener"
+"\">DEBUG=True</a> is in your settings file and you have not configured any "
+"URLs."
 msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
@@ -1308,4 +1307,35 @@ msgstr ""
 
 #: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
 msgid "Connect, get help, or contribute"
+msgstr ""
+
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_stacked.html:12
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_tabular.html:34
+msgid "View"
+msgstr ""
+
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_stacked.html:14
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_tabular.html:36
+msgid "View on site"
+msgstr ""
+
+#: .\venv\Lib\site-packages\jalali_date\templates\admin\edit_inline\jalali_tabular.html:20
+msgid "Delete?"
+msgstr ""
+
+#: .\venv\Lib\site-packages\jalali_date\widgets.py:49
+msgid "Date:"
+msgstr ""
+
+#: .\venv\Lib\site-packages\jalali_date\widgets.py:49
+msgid "Time:"
+msgstr ""
+
+#: .\venv\Lib\site-packages\tests\tests\templatetags\test_jalali_admin_safe_readonly_template_tag.py:84
+msgid "%H.%M.%S | %Y-%m-%d"
+msgstr ""
+
+#: .\venv\Lib\site-packages\tests\tests\templatetags\test_jalali_now_template_tag.py:46
+#: .\venv\Lib\site-packages\tests\tests\templatetags\test_to_jalali_template_tag.py:66
+msgid "%Y-%m-%d"
 msgstr ""
