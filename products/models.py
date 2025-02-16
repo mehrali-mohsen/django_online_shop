@@ -7,11 +7,12 @@ from django.utils.translation import gettext_lazy as _
 from ckeditor.fields import RichTextField
 
 class Product(models.Model):
-    title = models.CharField(max_length=100, verbose_name=_('title'))
-    description = RichTextField(verbose_name=_('description'))
-    price = models.PositiveIntegerField(default=0, verbose_name=_('price'))
-    active = models.BooleanField(default=True, verbose_name=_('active'))
-    image = models.ImageField(verbose_name=_('Product Image'), upload_to='product/product_cover/', blank=True, )
+    title = models.CharField(_('title'), max_length=100)
+    description = RichTextField(_('description'))
+    short_description = models.TextField(_('short description'), blank=True)
+    price = models.PositiveIntegerField(_('price'), default=0)
+    active = models.BooleanField(_('active'), default=True)
+    image = models.ImageField(_('Product Image'), upload_to='product/product_cover/', blank=True, )
 
     # datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_created = models.DateTimeField(_('Date Time of Creation'), default=timezone.now)
@@ -45,13 +46,13 @@ class Comment(models.Model):
         related_name='comments',
         verbose_name='Comment Author',
     )
-    body = models.TextField(verbose_name=_('Comment Text'))
-    stars = models.CharField(max_length=10, choices=PRODUCT_STARS, verbose_name=_('What is your score?'), )
+    body = models.TextField(_('Comment Text'))
+    stars = models.CharField(_('What is your score?'), max_length=10, choices=PRODUCT_STARS)
 
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
 
-    active = models.BooleanField(default=True, verbose_name=_('active'),)
+    active = models.BooleanField(_('active'), default=True)
 
     # Manager
     objects = models.Manager()
