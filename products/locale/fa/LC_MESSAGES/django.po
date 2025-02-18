@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-16 11:03+0330\n"
+"POT-Creation-Date: 2025-02-17 14:24+0330\n"
 "PO-Revision-Date: 2025-02-16 11:07+0330\n"
 "Last-Translator:   <admin@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "description"
 msgstr "توضیحات"
 
 #: .\products\models.py:12
-#| msgid "description"
 msgid "short description"
 msgstr "توضیحات کوتاه محصول"
 
