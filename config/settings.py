@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'persian_translate.apps.PersianTranslateConfig',
     'orders.apps.OrdersConfig',
+    'payment.apps.PaymentConfig',
 
     # third party apps
     'rosetta',
@@ -215,3 +216,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap5'
 MESSAGE_TAGS = {
     messages.ERROR: 'danger',
 }
+
+ZARINPAL_MERCHANT_ID = env("DJANGO_ZARINPAL_MERCHANT_ID")
